@@ -1,0 +1,15 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test tests/ui/",
+    "test:api": "npx playwright test tests/api/",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report"
+  }
+}
