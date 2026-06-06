@@ -57,3 +57,6 @@ Negative: 10
 ## Test Plan
 
 See `TEST_PLAN.md` for scope, test cases, edge cases, and risk assessment.
+
+## HTML Report Screenshot
+![Playwright Report](report-screenshot.png)
