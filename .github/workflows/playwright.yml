@@ -20,13 +20,13 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --save-dev @playwright/test typescript dotenv @types/node
 
       - name: Install Playwright browsers
-        run: node_modules/.bin/playwright install --with-deps chromium
+        run: npx playwright install --with-deps chromium
 
       - name: Run Playwright tests
-        run: node_modules/.bin/playwright test
+        run: npx playwright test
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
           API_BASE_URL: ${{ secrets.API_BASE_URL }}
